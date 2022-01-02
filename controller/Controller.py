@@ -2,7 +2,6 @@ import time
 
 from view.View import View
 from controller.Config import Config
-from controller.Joystick import Joystick
 from controller.ViscaOverIPService import ViscaOverIPService
 from controller.AxisState import AxisState
 
@@ -62,7 +61,8 @@ class Controller:
         #create the UI QT object
         self.view = View(viewConfig, viewActions)
         
-       
+    def start(self):
+        self.view.start(self.config.getUIConfig()["fullscreen"])
     
     def quit(self, event):
         self.ViscaOverIPService.closeUDPServer()

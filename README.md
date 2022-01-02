@@ -7,6 +7,13 @@ Visca over IP is a protocol defined by Sony to leverage control over their camer
 ## Requirements
 To run the software, you need to make sure you have the following available to you:
 
+### Computer
+A computer with the following:
+- Python 3 (has been tested with Python 3.9) with the following modules installed:
+    - PyQT 5
+    - pygame (required for joystick control)
+    - 
+
 ### Config file
 
 ## Use cases

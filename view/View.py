@@ -60,8 +60,9 @@ class View(QMainWindow) :
         self.initJoystickUIButtons()
         self.initJoystickControl()
 
-        #Now that everything has been set up, let's show the UI
-        if self.uiConfig["fullscreen"]:
+    
+    def start(self, fullscreen):
+        if fullscreen:
             self.showFullScreen()
         else:
             self.show()

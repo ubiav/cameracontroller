@@ -12,6 +12,7 @@ def main():
     #this will kick it all off and get the system
     #up and running
     myController = Controller()
+    myController.start()
 
     #when controller exits, clean everything up
     sys.exit(app.exec())
